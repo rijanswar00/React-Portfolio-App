@@ -1,6 +1,7 @@
 import AboutSection from "../Components/AboutSection"
 import HeroSection from "../Components/HeroSection"
 import Navbar from "../Components/Navbar"
+import ProjectsSection from "../Components/ProjectsSection"
 import SkillsSection from "../Components/SkillsSection"
 import StarBackground from "../Components/StarBackground"
 import ThemeToggle from "../Components/ThemeToggle"
@@ -25,6 +26,7 @@ const Home = () => {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <ProjectsSection />
       </main>
 
       {/* Footer */}
