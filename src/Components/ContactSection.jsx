@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Instagram, Linkedin, Mail, MapPin, Phone, Twitch, Twitter } from "lucide-react"
 
 const ContactSection = () => {
   return (
@@ -51,10 +51,70 @@ const ContactSection = () => {
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div className="pt-8">
+                        <h4 className="font-medium mb-4">Connect With Me</h4>
+                        <div className="flex justify-center space-x-4">
+                            <a href="#" target="_blank">
+                                <Linkedin />
+                            </a>
+                            <a href="#" target="_blank">
+                                <Twitter />
+                            </a>
+                            <a href="#" target="_blank">
+                                <Instagram />
+                            </a>
+                            <a href="#" target="_blank">
+                                <Twitch />
+                            </a>
+                        </div>
 
                     </div>
 
-                    
+                </div>
+
+                <div className="bg-card p-8 rounded-lg shadow-xs" >
+                    <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+
+                    <form className="space-y-6">
+                        <div>
+                            <label
+                             htmlFor="name"
+                             className="block text-sm font-medium mb-2"> Your Name</label>
+                            <input
+                             type="text"
+                             id="name" 
+                             name="name"
+                             required 
+                             className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                             placeholder="Rijan Swar"/>
+                        </div>
+                        <div>
+                            <label
+                             htmlFor="email"
+                             className="block text-sm font-medium mb-2"> Your Email</label>
+                            <input
+                             type="text"
+                             id="email" 
+                             name="email"
+                             required 
+                             className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                             placeholder="rijanswar00@gmail.com"/>
+                        </div>
+                        <div>
+                            <label
+                             htmlFor="message"
+                             className="block text-sm font-medium mb-2"> Your Message</label>
+                            <textarea
+                             id="message" 
+                             name="message"
+                             required 
+                             className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                             placeholder="Hello, I'd like to talk about...gi"/>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
